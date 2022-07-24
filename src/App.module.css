@@ -1,0 +1,10 @@
+.content {
+  max-width: 46rem;
+  margin: auto;
+}
+
+@media (max-width: 740px) {
+  .content {
+    padding: 0.875rem;
+  }
+}

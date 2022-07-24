@@ -1,0 +1,101 @@
+.newTaskForm {
+  margin-top: -1.75rem;
+}
+
+.iptNewTask {
+  padding: 1rem;
+}
+
+.btnCreate {
+  margin-left: 0.5rem;
+  width: 5.625rem;
+  height: 3.25rem;
+  border-radius: 0.5rem;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.btnCreate svg {
+  position: relative;
+  top: 0.125rem;
+}
+
+.btnCreate:hover {
+  background: var(--blue);
+  color: var(--gray-100);
+}
+
+.btnCreate:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.tasks .textCounters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks .textCounters {
+  margin-top: 4.275rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.tasks .createdTasksCounters {
+  color: var(--blue);
+}
+
+.tasks .finishedTasksCounters {
+  color: var(--purple);
+}
+
+.tasks .createdTasksCounters span,
+.tasks .finishedTasksCounters span {
+  color: var(--gray-200);
+  background: var(--gray-400);
+  margin-left: 0.5rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 62.4375rem;
+  padding: 0.125rem 0.5rem;
+}
+
+.tasksList {
+  margin-top: 1.5rem;
+}
+
+.emptyTasks {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.emptyTasks img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.emptyTasksText {
+  margin-top: 1.2rem;
+  color: var(--gray-300);
+  font-weight: bold;
+}
+
+.emptyTasksText span {
+  font-weight: 400;
+}
+
+@media (max-width: 740px) {
+  .iptNewTask {
+    width: 100% !important;
+  }
+
+  .btnCreate {
+    margin-top: 0.875rem;
+    margin-left: 0;
+  }
+}
